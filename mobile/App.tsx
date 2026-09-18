@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, ScrollView, ActivityIndicator, Dimensions, Platform, KeyboardAvoidingView, Modal, FlatList, StatusBar, Image, SafeAreaView } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import { BlurView } from 'expo-blur';
@@ -257,7 +257,7 @@ export default function App() {
     setLoading(true);
     setError(null);
     setResult(null);
-    setShortInsight(null);
+    setShortInsight('...');
 
     try {
       const rateRes = await fetch(`${API_BASE_URL}/rates?base=${baseCurrency.toUpperCase()}`);
@@ -281,6 +281,7 @@ export default function App() {
         }
       } catch (e) {
         console.log('Insight error', e);
+        setShortInsight('(Lỗi kết nối AI)');
       }
     } catch (err: any) {
       setError(err.message || t.errorNetwork);
@@ -614,7 +615,7 @@ case 'AI':
           <ScrollView style={{flex: 1}} showsVerticalScrollIndicator={false}>
             <Text style={[styles.headerTitle, {marginBottom: 20}]}>{t.newsTitle}</Text>
 
-            {(t.newsList || NEWS_DATA).map((news) => {
+            {(t.newsList || NEWS_DATA).map((news: any) => {
               if (news.featured) {
                 return (
                   <TouchableOpacity key={news.id} style={styles.featuredNewsCard} onPress={() => setSelectedNews(news)}>
