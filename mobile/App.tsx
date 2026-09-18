@@ -726,9 +726,11 @@ case 'AI':
   };
 
   return (
-    <LinearGradient colors={[theme.bg1, theme.bg2, theme.bg1]} style={styles.container}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
+    <View style={styles.root}>
+      <LinearGradient colors={[theme.bg1, theme.bg2, theme.bg1]} style={[StyleSheet.absoluteFill]} />
+      <View style={styles.appWrapper}>
+        <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+        <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
           <ScrollView 
             contentContainerStyle={styles.scrollContent} 
             showsVerticalScrollIndicator={false}
@@ -919,7 +921,7 @@ case 'AI':
                         }
                       ]
                     }}
-                    width={screenWidth} // from react-native
+                    width={Math.min(screenWidth, 480) - 40} // from react-native
                     height={260}
                     withDots={false}
                     withInnerLines={false}
@@ -975,11 +977,28 @@ case 'AI':
         </Modal>
 
       </KeyboardAvoidingView>
-    </LinearGradient>
+      </View>
+    </View>
   );
 }
 
 const getStyles = (theme: any, isDarkMode: boolean) => StyleSheet.create({
+  root: {
+    flex: 1,
+    backgroundColor: '#000',
+  },
+  appWrapper: {
+    flex: 1,
+    width: '100%',
+    maxWidth: Platform.OS === 'web' ? 480 : '100%',
+    alignSelf: 'center',
+    backgroundColor: 'transparent',
+    overflow: 'hidden',
+    shadowColor: '#000',
+    shadowOpacity: 0.5,
+    shadowRadius: 20,
+    elevation: 10,
+  },
   container: {
     flex: 1,
   },
