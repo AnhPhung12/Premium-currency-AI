@@ -208,7 +208,7 @@ export default function App() {
   const [selectedNews, setSelectedNews] = useState<any | null>(null);
   
   const t = TRANSLATIONS[language.code];
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const theme = isDarkMode ? DARK_THEME : LIGHT_THEME;
   const styles = getStyles(theme, isDarkMode);
 
