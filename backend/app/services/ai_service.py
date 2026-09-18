@@ -51,9 +51,9 @@ async def get_short_insight(amount: str, target: str, language_code: str):
         return ""
     
     prompt = (
-        f"You are a helpful assistant. The user just converted currency and got this amount: {amount} {target}. "
-        f"Your task is to write out this exact amount in words (spell it out) in the language corresponding to this code: {language_code}. "
-        f"Do not include any other text, just the amount in words. For example, if it's 2,450,000 VND and lang is vi, say 'Hai triệu bốn trăm năm mươi nghìn đồng'."
+        f"You are a helpful assistant. The user converted {amount} {target}. "
+        f"Spell out this exact amount in words using the language code: '{language_code}'. "
+        f"IMPORTANT: You MUST write the words strictly in the requested language. Do NOT use Vietnamese unless the code is 'VI'. If the code is 'KO', write completely in Korean. Just the spelled out amount, no other text."
     )
 
     try:

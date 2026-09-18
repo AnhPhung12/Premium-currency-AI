@@ -101,6 +101,7 @@ const LANGUAGES = [
 
 const TRANSLATIONS: any = {
   VI: {
+newsList: [{"title": "FED giữ nguyên lãi suất ở mức 5.25%", "time": "2 giờ trước", "source": "Reuters", "content": "Cục Dự trữ Liên bang Mỹ (FED) hôm nay...", "id": "1", "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80", "featured": true}, {"title": "BOJ có dấu hiệu can thiệp", "time": "5 giờ trước", "source": "Bloomberg", "content": "Thị trường ngoại hối...", "id": "2", "image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=600&q=80"}, {"title": "Châu Âu công bố dữ liệu lạm phát", "time": "12 giờ trước", "source": "Financial Times", "content": "Cơ quan Thống kê...", "id": "3", "image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=600&q=80"}, {"title": "Thị trường vàng biến động", "time": "1 ngày trước", "source": "CNBC", "content": "Giới đầu tư toàn cầu...", "id": "4", "image": "https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=600&q=80"}],
     amountLabel: 'Số tiền', fromLabel: 'Từ', toLabel: 'Sang', convertBtn: 'Chuyển đổi ngay', resultTitle: 'Số tiền nhận được', aiReadTitle: 'Bằng chữ', errorEmpty: 'Vui lòng nhập đầy đủ thông tin', errorNetwork: 'Lỗi mạng, vui lòng thử lại', errorRate: 'Không tìm thấy tỷ giá',
     tabConvert: 'Đổi tiền', tabAI: 'AI', tabMarket: 'Thị trường', tabNews: 'Tin tức', tabProfile: 'Cá nhân',
     aiMarketAnalysis: 'Phân tích thị trường', aiGetLatest: 'Lấy phân tích mới nhất', aiChatPlaceholder: 'Hỏi AI...', aiChatSend: 'Gửi', aiTabMarket: 'Phân tích', aiTabChat: 'Trò chuyện',
@@ -110,6 +111,7 @@ const TRANSLATIONS: any = {
     modalUpdateInfo: 'Cập nhật thông tin', modalName: 'Họ và tên', modalPhone: 'Số điện thoại', modalSave: 'Lưu lại', modalCancel: 'Hủy', modalDelete: 'Xóa dữ liệu', modalChangeAvatar: 'Đổi ảnh đại diện', langSelectTitle: 'Chọn Ngôn Ngữ'
   },
   EN: {
+newsList: [{"title": "FED keeps interest rates at 5.25%", "time": "2 hours ago", "source": "Reuters", "content": "The US Federal Reserve...", "id": "1", "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80", "featured": true}, {"title": "BOJ shows signs of intervention", "time": "5 hours ago", "source": "Bloomberg", "content": "The foreign exchange market...", "id": "2", "image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=600&q=80"}, {"title": "Europe releases inflation data", "time": "12 hours ago", "source": "Financial Times", "content": "The European Statistics...", "id": "3", "image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=600&q=80"}, {"title": "Gold market fluctuates wildly", "time": "1 day ago", "source": "CNBC", "content": "Global investors...", "id": "4", "image": "https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=600&q=80"}],
     amountLabel: 'Amount', fromLabel: 'From', toLabel: 'To', convertBtn: 'Convert Now', resultTitle: 'Received Amount', aiReadTitle: 'In words', errorEmpty: 'Please fill all fields', errorNetwork: 'Network error, try again', errorRate: 'Rate not found',
     tabConvert: 'Convert', tabAI: 'AI', tabMarket: 'Market', tabNews: 'News', tabProfile: 'Profile',
     aiMarketAnalysis: 'Market Analysis', aiGetLatest: 'Get latest analysis', aiChatPlaceholder: 'Ask AI...', aiChatSend: 'Send', aiTabMarket: 'Analysis', aiTabChat: 'Chat',
@@ -119,6 +121,7 @@ const TRANSLATIONS: any = {
     modalUpdateInfo: 'Update Information', modalName: 'Full Name', modalPhone: 'Phone Number', modalSave: 'Save', modalCancel: 'Cancel', modalDelete: 'Delete Data', modalChangeAvatar: 'Change Avatar', langSelectTitle: 'Select Language'
   },
   KO: {
+newsList: [{"title": "FED, 금리 5.25% 유지", "time": "2시간 전", "source": "Reuters", "content": "미국 연방준비제도...", "id": "1", "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80", "featured": true}, {"title": "BOJ 개입 조짐", "time": "5시간 전", "source": "Bloomberg", "content": "외환 시장...", "id": "2", "image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=600&q=80"}, {"title": "유럽 인플레이션 데이터 발표", "time": "12시간 전", "source": "Financial Times", "content": "유럽 통계청...", "id": "3", "image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=600&q=80"}, {"title": "금 시장 큰 변동", "time": "1일 전", "source": "CNBC", "content": "전 세계 투자자들...", "id": "4", "image": "https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=600&q=80"}],
     amountLabel: '금액', fromLabel: '에서', toLabel: '로', convertBtn: '변환하다', resultTitle: '받은 금액', aiReadTitle: '단어로', errorEmpty: '모든 필드를 입력하세요', errorNetwork: '네트워크 오류, 다시 시도하세요', errorRate: '환율을 찾을 수 없음',
     tabConvert: '변환', tabAI: 'AI', tabMarket: '시장', tabNews: '뉴스', tabProfile: '프로필',
     aiMarketAnalysis: '시장 분석', aiGetLatest: '최신 분석 가져오기', aiChatPlaceholder: 'AI에게 묻기...', aiChatSend: '보내기', aiTabMarket: '분석', aiTabChat: '채팅',
@@ -128,6 +131,7 @@ const TRANSLATIONS: any = {
     modalUpdateInfo: '정보 업데이트', modalName: '성명', modalPhone: '전화번호', modalSave: '저장', modalCancel: '취소', modalDelete: '데이터 삭제', modalChangeAvatar: '아바타 변경', langSelectTitle: '언어 선택'
   },
   JA: {
+newsList: [{"title": "FED、金利を5.25%に据え置き", "time": "2時間前", "source": "Reuters", "content": "米連邦準備制度理事会...", "id": "1", "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80", "featured": true}, {"title": "BOJ介入の兆し", "time": "5時間前", "source": "Bloomberg", "content": "外国為替市場...", "id": "2", "image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=600&q=80"}, {"title": "欧州インフレデータを発表", "time": "12時間前", "source": "Financial Times", "content": "欧州統計局...", "id": "3", "image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=600&q=80"}, {"title": "金市場が激しく変動", "time": "1日前", "source": "CNBC", "content": "世界の投資家...", "id": "4", "image": "https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=600&q=80"}],
     amountLabel: '金額', fromLabel: 'から', toLabel: 'へ', convertBtn: '変換する', resultTitle: '受け取った金額', aiReadTitle: '言葉で', errorEmpty: 'すべての項目を入力してください', errorNetwork: 'ネットワークエラー、再試行してください', errorRate: 'レートが見つかりません',
     tabConvert: '変換', tabAI: 'AI', tabMarket: '市場', tabNews: 'ニュース', tabProfile: 'プロフィール',
     aiMarketAnalysis: '市場分析', aiGetLatest: '最新の分析を取得', aiChatPlaceholder: 'AIに聞く...', aiChatSend: '送信', aiTabMarket: '分析', aiTabChat: 'チャット',
@@ -137,6 +141,7 @@ const TRANSLATIONS: any = {
     modalUpdateInfo: '情報を更新', modalName: '氏名', modalPhone: '電話番号', modalSave: '保存', modalCancel: 'キャンセル', modalDelete: 'データを削除', modalChangeAvatar: 'アバターを変更', langSelectTitle: '言語を選択'
   },
   ZH: {
+newsList: [{"title": "美联储将利率维持在 5.25%", "time": "2小时前", "source": "Reuters", "content": "美国联邦储备委员会...", "id": "1", "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80", "featured": true}, {"title": "日本央行显示出干预迹象", "time": "5小时前", "source": "Bloomberg", "content": "外汇市场...", "id": "2", "image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=600&q=80"}, {"title": "欧洲发布通胀数据", "time": "12小时前", "source": "Financial Times", "content": "欧洲统计局...", "id": "3", "image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=600&q=80"}, {"title": "黄金市场剧烈波动", "time": "1天前", "source": "CNBC", "content": "全球投资者...", "id": "4", "image": "https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=600&q=80"}],
     amountLabel: '金额', fromLabel: '从', toLabel: '到', convertBtn: '立即转换', resultTitle: '收到的金额', aiReadTitle: '大写', errorEmpty: '请填写所有字段', errorNetwork: '网络错误，请重试', errorRate: '未找到汇率',
     tabConvert: '转换', tabAI: 'AI', tabMarket: '市场', tabNews: '新闻', tabProfile: '我的',
     aiMarketAnalysis: '市场分析', aiGetLatest: '获取最新分析', aiChatPlaceholder: '询问AI...', aiChatSend: '发送', aiTabMarket: '分析', aiTabChat: '聊天',
@@ -146,6 +151,7 @@ const TRANSLATIONS: any = {
     modalUpdateInfo: '更新信息', modalName: '姓名', modalPhone: '电话号码', modalSave: '保存', modalCancel: '取消', modalDelete: '删除数据', modalChangeAvatar: '更改头像', langSelectTitle: '选择语言'
   },
   RU: {
+newsList: [{"title": "ФРС сохраняет ставку на уровне 5,25%", "time": "2 часа назад", "source": "Reuters", "content": "Федеральная резервная система США...", "id": "1", "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80", "featured": true}, {"title": "Банк Японии подает признаки интервенции", "time": "5 часов назад", "source": "Bloomberg", "content": "Валютный рынок...", "id": "2", "image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=600&q=80"}, {"title": "Европа публикует данные об инфляции", "time": "12 часов назад", "source": "Financial Times", "content": "Европейское статистическое...", "id": "3", "image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=600&q=80"}, {"title": "Рынок золота сильно колеблется", "time": "1 день назад", "source": "CNBC", "content": "Глобальные инвесторы...", "id": "4", "image": "https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=600&q=80"}],
     amountLabel: 'Сумма', fromLabel: 'Из', toLabel: 'В', convertBtn: 'Конвертировать', resultTitle: 'Полученная сумма', aiReadTitle: 'Прописью', errorEmpty: 'Пожалуйста, заполните все поля', errorNetwork: 'Ошибка сети, попробуйте еще раз', errorRate: 'Курс не найден',
     tabConvert: 'Конвертация', tabAI: 'ИИ', tabMarket: 'Рынок', tabNews: 'Новости', tabProfile: 'Профиль',
     aiMarketAnalysis: 'Анализ рынка', aiGetLatest: 'Получить свежий анализ', aiChatPlaceholder: 'Спросить ИИ...', aiChatSend: 'Отправить', aiTabMarket: 'Анализ', aiTabChat: 'Чат',
@@ -282,6 +288,12 @@ export default function App() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    if (result && amount) {
+      handleConvert();
+    }
+  }, [language.code]);
 
   const handleSwap = () => {
     setBaseCurrency(targetCurrency);
@@ -505,7 +517,7 @@ export default function App() {
             {result && (
               <BlurView intensity={40} tint={theme.tint} style={styles.resultBox}>
                 <Text style={styles.resultTitle}>{t.resultTitle}</Text>
-                <Text style={styles.resultValue}>{result}</Text>
+                <Text style={styles.resultValue} adjustsFontSizeToFit={true} numberOfLines={1}>{result}</Text>
                 {shortInsight && (
                   <View style={styles.aiInsightBox}>
                     <View style={styles.aiHeaderRow}>
@@ -602,7 +614,7 @@ case 'AI':
           <ScrollView style={{flex: 1}} showsVerticalScrollIndicator={false}>
             <Text style={[styles.headerTitle, {marginBottom: 20}]}>{t.newsTitle}</Text>
 
-            {NEWS_DATA.map((news) => {
+            {(t.newsList || NEWS_DATA).map((news) => {
               if (news.featured) {
                 return (
                   <TouchableOpacity key={news.id} style={styles.featuredNewsCard} onPress={() => setSelectedNews(news)}>
