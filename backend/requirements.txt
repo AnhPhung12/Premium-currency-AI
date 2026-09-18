@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+motor
+pymongo
+google-generativeai
+python-dotenv
+pydantic
+pydantic-settings
