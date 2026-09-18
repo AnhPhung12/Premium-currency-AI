@@ -8,7 +8,7 @@ import { LineChart } from 'react-native-chart-kit';
 import Markdown from 'react-native-markdown-display';
 
 const screenWidth = Dimensions.get('window').width;
-const API_BASE_URL = 'http://192.168.1.6:8000/api';
+const API_BASE_URL = 'https://premium-currency-ai.onrender.com/api';
 
 // Bảng màu
 
